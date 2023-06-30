@@ -1,0 +1,28 @@
+.overlay {
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+
+  &_afterOpen {
+    opacity: 1;
+  }
+
+  &_beforeClose {
+    opacity: 0;
+  }
+}
+
+.content {
+  transform: scale(0);
+  transition: transform 150ms ease-in-out;
+  background-color: white;
+
+  &_afterOpen {
+    transform: scale(1);
+  }
+
+  &_beforeClose {
+    transform: scale(0);
+  }
+}
+
+

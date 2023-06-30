@@ -1,0 +1,16 @@
+.root {
+  display: flex;
+  flex-direction: column;
+
+  &_align_start {
+    justify-content: start;
+  }
+
+  &_align_center {
+    justify-content: center;
+  }
+
+  &_align_end {
+    justify-content: end;
+  }
+}

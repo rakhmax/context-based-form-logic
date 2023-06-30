@@ -1,0 +1,24 @@
+.root {
+  margin-top: 2.5rem;
+  display: flex;
+
+  &_align_start {
+    justify-content: start;
+  }
+
+  &_align_center {
+    justify-content: center;
+  }
+
+  &_align_end {
+    justify-content: end;
+  }
+
+  $sizes: 8, 16;
+
+  @each $s in $sizes {
+    &_gap_#{$s} {
+      grid-gap: #{$s}px;
+    }
+  }
+}
